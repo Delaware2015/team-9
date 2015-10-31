@@ -1,13 +1,7 @@
-
-/**
- * @ngdoc function
- * @name casfrontApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the casfrontApp
- */
+//controller used for new usersz
 angular.module('casfrontApp')
   .controller('newloginCtrl', function ($scope, loginservice, $location) {
+      //create a new object, populated by the fields of the form, and send to service for verification
   		$scope.createNewUser= function(){
   			var newUser = {
   				firstname: $scope.firstname,

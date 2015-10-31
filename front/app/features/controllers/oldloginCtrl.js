@@ -1,11 +1,4 @@
-
-/**
- * @ngdoc function
- * @name casfrontApp.controller:AboutCtrl
- * @description
- * # AboutCtrl
- * Controller of the casfrontApp
- */
+//controller used for return users
 angular.module('casfrontApp')
   .controller('oldloginCtrl', function ($scope, loginservice, $location) {
    	console.log("bull");
