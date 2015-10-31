@@ -18,7 +18,7 @@ angular.module('casfrontApp')
    	}
 
     $scope.goToNewUser = function(){
-        $location.path("/newlogin.html")
+        $location.path("/about")
     }
 
   });

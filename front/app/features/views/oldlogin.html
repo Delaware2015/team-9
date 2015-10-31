@@ -1,12 +1,13 @@
 <h1 class= jumbotron>User Login</h1>
 		<form ng-Submit= "getUser()">
-			<input type="text" placeholder="Email" ng-model='email' class= "col-md-6"></input>
 
+		<div class= "login_input">
+			<input type="text" placeholder="Email" ng-model='email' class= "col-md-6"></input>
 			<input type="password" placeholder="Password" ng-model='password' class= "col-md-6"></input>
-			<div></div>
+		</div>
+			<div class="loginbuttons"></div>
     			<button type='submit' class= "col-md-6">Submit</button>
     			<button type='button' ng-click="goToNewUser()" class= "col-md-6">New User</button>
-
   			</div>
 		</form>
 	</div>
