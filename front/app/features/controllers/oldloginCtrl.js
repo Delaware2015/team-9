@@ -17,8 +17,6 @@ angular.module('casfrontApp')
    		loginservice.verifyUser(user);
    	}
 
-    $scope.goToNewUser = function(){
-        $location.path("/newlogin")
-    }
+    
 
   });

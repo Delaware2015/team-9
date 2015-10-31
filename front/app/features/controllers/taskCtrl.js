@@ -6,7 +6,8 @@ angular.module('casfrontApp')
   		var task= {
   			taskname: $scope.taskname,
   			taskDate : $scope.taskdate,
-  			studentId : student.studentId
+        studentId: 1,
+  			status: student.status.value
   		}
   		console.log(task);
   		taskservice.addTaskToData(task);
