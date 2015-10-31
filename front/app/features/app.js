@@ -1,4 +1,3 @@
-'use strict';
 
 /**
  * @ngdoc overview
@@ -17,7 +16,7 @@ angular
     'ngSanitize',
     'ngTouch',
     'casfrontApp.service',
-    
+    'casfrontApp.taskservice'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -28,6 +27,10 @@ angular
       .when('/about', {
         templateUrl: 'features/views/newlogin.html',
         controller: 'newloginCtrl',
+      })
+      .when('/tasks', {
+        templateUrl: 'features/views/tasks.html',
+        controller: 'taskCtrl',
       })
       .otherwise({
         redirectTo: '/'
