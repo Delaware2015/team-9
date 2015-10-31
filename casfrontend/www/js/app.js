@@ -17,17 +17,18 @@ angular.module('casproject', ['ionic', 'casproject.controllers'])
     }
   });
 })
+
 .config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider
             .state('oldlogin', {
-                url: '#/oldlogin',
-                templateUrl: '/features/loginfeature/views/oldlogin.html',
+                url: '/oldlogin',
+                templateUrl: 'features/loginfeature/views/oldlogin.html',
                 controller: "oldloginCtrl"
             })
             .state('newlogin', {
-                url: '#/newlogin',
-                templateUrl: '/features/loginfeature/views/newlogin.html',
+                url: '/newlogin',
+                templateUrl: 'features/loginfeature/views/newlogin.html',
                 controller: "newloginCtrl"
             })
 

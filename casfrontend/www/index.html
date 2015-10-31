@@ -26,30 +26,11 @@
 
   </head>
   <body ng-app="casproject">
-
-    <ion-pane>
-      <ion-header-bar class="bar-stable">
+    <ion-header-bar class="bar-stable">
         <h1 class="title">Children's Aid Society</h1>
       </ion-header-bar>
-      <ion-content>
-      <ion-pane>
-    <h1>User Login</h1>
-    <div class="card">
-    <div class="item item-divider">
-        <div ng-bind="alertMessage" style="text-align:center; width:100%; color:red;"></div>
-        Login
-      </div>
-    
-    <form ng-Submit= "sendForVerification()">
-      <input type="text" placeholder="Team Name" ng-model='name' class="loginInput"></input>
-      <input type="password" placeholder="Password" ng-model='password' class="loginInput"></input><div class="item item-divider">
-    <button type='submit' class="submitBtn">Submit</button>
-  </div>
-      
-    </form>
-    </div>
-</ion-pane>
-      </ion-content>
+      <ion-nav-view>
+      </ion-nav-view>
     </ion-pane>
   </body>
 </html>
