@@ -31,3 +31,36 @@ https://studentaid.ed.gov/sa/prepare-for-college/checklists/adult-student
 
 Financial Aid Infographic:
 https://studentaid.ed.gov/sa/sites/default/files/financial-aid-process.png
+
+MySQL Queries - 
+
+--Create Database--
+CREATE DATABASE IF NOT EXISTS StudentInfo;
+
+--StudentTable--
+CREATE TABLE STUDENT(Student_Id INT UNIQUE,First_Name varchar(255),
+	Last_Name varchar(255),
+    	Email varchar(255) UNIQUE,
+    	Password varchar(255),
+    	Mentor_Id INT UNIQUE,
+    	Task_Id INT,
+	Univ_Id INT,
+	School_Name varchar(255));	
+
+--MentorTable--
+CREATE TABLE Mentor(Mentor_Id INT UNIQUE,
+    	First_Name varchar(255),
+    	Last_Name varchar(255),
+    	Email varchar(255),
+    	Relationship varchar(255));
+
+--TaskTable--
+CREATE TABLE Task(Task_Id INT UNIQUE,
+    	Task_Name varchar(255),
+    	Date varchar(255),
+	Status varchar(255));
+
+--Universites--
+CREATE TABLE Universities(Univ_Id INT UNIQUE,
+    	Univ_Name varchar(255),
+   	Task_Id INT);
