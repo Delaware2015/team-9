@@ -32,8 +32,6 @@ public class Student {
         this.taskList = new ArrayList<Task>();
     }
 
-
-
     public String getSchool() {
         return school;
     }
