@@ -1,5 +1,5 @@
-backend/*.iml
-backend/.idea
-backend/.mvn
+casbackend/*.iml
+casbackend/.idea
+casbackend/.mvn
 *.DS_Store
 target/
