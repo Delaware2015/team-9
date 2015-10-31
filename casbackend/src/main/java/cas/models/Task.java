@@ -5,6 +5,7 @@ import javax.persistence.*;
 
 /**
  * Created by tejas1794 on 10/30/15.
+ * Task Class
  */
 @Entity
 @Table(name = "task")
