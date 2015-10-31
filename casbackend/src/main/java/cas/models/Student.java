@@ -2,6 +2,8 @@ package cas.models;
 
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by tejas1794 on 10/30/15.
@@ -23,7 +25,7 @@ public class Student {
 
     public Student() {}
 
-    public Student(String school, String password, Mentor mentor, List<task> taskList){
+    public Student(String school, String password, Mentor mentor, List<Task> taskList){
         this.school = school;
         this.password = password;
         this.mentor = mentor;
