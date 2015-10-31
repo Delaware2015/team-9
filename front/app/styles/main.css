@@ -104,3 +104,6 @@ img{
 .addtask{
   display:inline;
 }
+#resource_container{
+  text-align: center;
+}
