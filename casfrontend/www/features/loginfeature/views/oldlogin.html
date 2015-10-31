@@ -2,11 +2,11 @@
 	<h1>User Login</h1>
 	<div class="card">
 		<div class="item item-divider">
-    		<div ng-bind="alertMessage" style="text-align:center; width:100%; color:red;"></div>
+    		<div style="text-align:center; width:100%; color:red;"></div>
   		</div>
 		
-		<form ng-Submit= "sendForVerification()">
-			<input type="text" placeholder="Email" ng-model='name' class="loginInput"></input>
+		<form ng-Submit= "getUser()">
+			<input type="text" placeholder="Email" ng-model='email' class="loginInput"></input>
 			<input type="password" placeholder="Password" ng-model='password' class="loginInput"></input>
 			<div class="item item-divider">
     			<button type='submit' class="submitBtn">Submit</button>
