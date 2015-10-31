@@ -29,7 +29,7 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="548" column="62" selection-start-line="548" selection-start-column="62" selection-end-line="548" selection-end-column="62" />
               <folding>
-                <marker date="1446300313000" expanded="true" signature="68593:68656" placeholder="..." />
+                <marker date="1446300512000" expanded="true" signature="68593:68656" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -181,12 +181,12 @@
         <option value="$PROJECT_DIR$/src/main/java/cas/models/University.java" />
         <option value="$PROJECT_DIR$/src/main/java/cas/models/TaskDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/cas/models/Task.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cas/controllers/TaskController.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cas/controllers/sdfh.java" />
         <option value="$PROJECT_DIR$/src/main/java/cas/SimpleCORSFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/cas/controllers/SimpleCORSFilter.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/cas/controllers/TaskController.java" />
       </list>
     </option>
   </component>
@@ -794,12 +794,12 @@
       <workItem from="1446273364218" duration="8020000" />
       <workItem from="1446282882688" duration="8476000" />
       <workItem from="1446295089998" duration="72000" />
-      <workItem from="1446295718621" duration="3497000" />
+      <workItem from="1446295718621" duration="3989000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28269000" />
+    <option name="totallyTimeSpent" value="28761000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="707" extended-state="6" />
@@ -909,7 +909,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1000,7 +1000,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1122,7 +1122,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1257,7 +1257,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="548" column="62" selection-start-line="548" selection-start-column="62" selection-end-line="548" selection-end-column="62" />
           <folding>
-            <marker date="1446300313000" expanded="true" signature="68593:68656" placeholder="..." />
+            <marker date="1446300512000" expanded="true" signature="68593:68656" placeholder="..." />
           </folding>
         </state>
       </provider>

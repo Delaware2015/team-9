@@ -35,7 +35,8 @@ function sendTheMail(task,userName,userEmail,patronEmail,deadline) {
     var yesterday = new Date((new Date()).valueOf() - 1000*60*60*24);
     var yestS = yesterday.toISOString().slice(0,10).replace(/-/g,"");
     
-    if (deadline === yestS){
+    //if (deadline === yestS){
+    if( true){
         m.messages.send(escalate, function(res) {
             log(res);
         }, function(err) {
