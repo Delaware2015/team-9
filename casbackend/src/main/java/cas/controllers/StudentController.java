@@ -1,7 +1,6 @@
 package cas.controllers;
 
-import cas.models.Student;
-import cas.models.StudentDAO;
+import cas.models.*;
 import org.springframework.stereotype.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +14,7 @@ import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.PostConstruct;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by emaron on 10/26/15.
@@ -25,14 +25,14 @@ public class StudentController {
     @Autowired
     private StudentDAO studentDAO;
 
-    @RequestMapping(value= "/student")
+    @RequestMapping(value = "/student")
     @ResponseBody
     public Student getStudent(String email, String password){
         Student student= null;
 
         if(studentDAO.findByEmail(email) == null){
-            student=  new Student();
-        }else{
+            student= new Student();
+        } else{
             if(studentDAO.findByEmail(email).getPassword() == password) {
                 student = studentDAO.findByEmail(email);
             }
@@ -45,14 +45,17 @@ public class StudentController {
 
     @RequestMapping(value = "/newStudent")
     @ResponseBody
-    public Student createNewStudent(String firstname, String lastname, String email, String password, String schoolname){
-
+    public Student createNewStudent(String firstName, String lastName, String email, String school, String password, Integer mentor){
         Student student= null;
         if(studentDAO.findByEmail(email) != null){
-
+            student = new Student();
         }
         else{
-            student = new Student(schoolname,password, )
+            student = new Student(firstName, lastName, email, school, password, mentor);
         }
+        return student;
     }
+
+
+
 }

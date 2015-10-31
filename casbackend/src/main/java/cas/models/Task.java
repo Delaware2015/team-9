@@ -7,13 +7,15 @@ import javax.persistence.*;
  * Created by tejas1794 on 10/30/15.
  */
 @Entity
-@Table(name="taskStuff")
+@Table(name="task")
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Integer id;
 
     private String name;
+
+    private Integer studentId;
 
     private String dateTime;
 

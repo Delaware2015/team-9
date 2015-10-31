@@ -7,11 +7,11 @@ import javax.persistence.*;
  * Created by emaron on 10/30/15.
  */
 @Entity
-@Table(name="blaaaaaah")
+@Table(name="person")
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Integer id;
 
     private String firstName;
 

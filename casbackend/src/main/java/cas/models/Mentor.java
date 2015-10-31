@@ -2,16 +2,17 @@ package cas.models;
 
 
 import javax.persistence.*;
+import java.net.Inet4Address;
 
 /**
  * Created by emaron on 10/30/15.
  */
 @Entity
-@Table(name="MentorStuff")
+@Table(name="mentor")
 public class Mentor {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Integer id;
 
     private String firstName;
 

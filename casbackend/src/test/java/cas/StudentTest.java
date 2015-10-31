@@ -22,7 +22,7 @@ public class StudentTest {
 
     @Before
     public void resourcesNeededToTest() {
-        testStudent = new Student("Valley High", "default", testMentor,  testArrayList);
+        testStudent = new Student();
         testMentor = new Mentor();
     }
 
