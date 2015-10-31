@@ -21,6 +21,7 @@ body {
 .header {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
+  background-color: ##1CB3FF;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -28,6 +29,7 @@ body {
   margin-bottom: 0;
   line-height: 40px;
   padding-bottom: 19px;
+
 }
 
 .container-narrow > hr {
@@ -36,10 +38,12 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
+  color:white ;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
-  background-color : #1e90ff;
-  box-shadow: 3px 3px 1px .2;
+  background-color : #87cefa;
+  border-width: 8px;
+  border-color: #eee9e9;
 }
 .jumbotron .btn {
   font-size: 21px;
@@ -73,7 +77,6 @@ body {
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
-    border-bottom: 0;
     text-align: center;
     font-size: 30pt;
     margin-bottom: 30px;
@@ -90,6 +93,7 @@ button{
   margin-top: 40px;
   margin-bottom: 25px;
   border-radius: 6px;
+  background-color: #87cefa;
 }
 .login_input{
   margin-left: 24%;
@@ -97,3 +101,4 @@ button{
 img{
   width: 300px;
 }
+
