@@ -48,5 +48,22 @@ public class TaskController {
         }
         return task.toString();
     }
+
+    @RequestMapping("/readsingletask")
+    @ResponseBody
+    public Task readSingle(String name) {
+        Task taskExisting;
+        try {
+            taskExisting = taskDAO.findOneByName(name);
+        } catch (Exception ex) {
+            return null;
+        }
+
+        if (taskExisting == null) {
+            return null;
+        }
+
+        return taskExisting;
+    }
 }
 

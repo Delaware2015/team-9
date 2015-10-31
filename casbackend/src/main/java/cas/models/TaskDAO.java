@@ -7,4 +7,6 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface TaskDAO extends CrudRepository<Task, Long> {
     String findByName(String name);
+
+    Task findOneByName(String name);
 }

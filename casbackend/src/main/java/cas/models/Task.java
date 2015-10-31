@@ -19,13 +19,13 @@ public class Task {
 
     private Integer studentId;
 
-    private String dateTime;
+    private String date;
 
     public Task() {}
 
     public Task(String name, String dateTime, Integer studentId, String status){
         this.name = name;
-        this.dateTime = dateTime;
+        this.date = dateTime;
         this.studentId = studentId;
         this.status = status;
     }
@@ -35,7 +35,7 @@ public class Task {
     }
 
     public String getDateTime() {
-        return dateTime;
+        return date;
     }
 
     public Integer getStudentId() {
@@ -67,7 +67,7 @@ public class Task {
     }
 
     public void setDateTime(String dateTime) {
-        this.dateTime = dateTime;
+        this.date = dateTime;
     }
 
 }
