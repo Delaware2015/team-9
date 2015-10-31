@@ -15,15 +15,19 @@ public class Task {
 
     private String name;
 
+    private String status;
+
     private Integer studentId;
 
     private String dateTime;
 
     public Task() {}
 
-    public Task(String name, String dateTime){
+    public Task(String name, String dateTime, Integer studentId, String status){
         this.name = name;
         this.dateTime = dateTime;
+        this.studentId = studentId;
+        this.status = status;
     }
 
     public String getName() {
@@ -32,6 +36,30 @@ public class Task {
 
     public String getDateTime() {
         return dateTime;
+    }
+
+    public Integer getStudentId() {
+        return studentId;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public void setStudentId(Integer studentId) {
+        this.studentId = studentId;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public void setName(String name) {

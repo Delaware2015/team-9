@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * Created by emaron on 10/26/15.
  */
-@RestController
+@Controller
 public class StudentController {
 
     @Autowired
@@ -33,8 +33,8 @@ public class StudentController {
         if(studentDAO.findByEmail(email) == null){
             student= new Student();
         } else{
-            if(studentDAO.findByEmail(email).getPassword() == password) {
-                student = studentDAO.findByEmail(email);
+            if(studentDAO.findByEmail(email) == email) {
+               // student = studentDAO.findByEmail(email);
             }
             else{
                 student= new Student();
@@ -45,7 +45,7 @@ public class StudentController {
 
     @RequestMapping(value = "/newStudent")
     @ResponseBody
-    public Student createNewStudent(String firstName, String lastName, String email, String school, String password, Integer mentor){
+    public String createNewStudent(String firstName, String lastName, String email, String school, String password, Integer mentor){
         Student student= null;
         if(studentDAO.findByEmail(email) != null){
             student = new Student();
@@ -53,7 +53,7 @@ public class StudentController {
         else{
             student = new Student(firstName, lastName, email, school, password, mentor);
         }
-        return student;
+        return student.toString();
     }
 
 
