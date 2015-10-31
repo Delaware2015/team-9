@@ -7,7 +7,7 @@ import javax.persistence.*;
  * Created by tejas1794 on 10/30/15.
  */
 @Entity
-@Table(name="task")
+@Table(name = "task")
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -17,13 +17,15 @@ public class Task {
 
     private String status;
 
+    @Column(name = "studentid")
     private Integer studentId;
 
     private String date;
 
-    public Task() {}
+    public Task() {
+    }
 
-    public Task(String name, String dateTime, Integer studentId, String status){
+    public Task(String name, String dateTime, Integer studentId, String status) {
         this.name = name;
         this.date = dateTime;
         this.studentId = studentId;

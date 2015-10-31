@@ -8,11 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by emaron on 10/31/15.
  */
-@Controller
+@RestController
 public class TaskController {
 
     @Autowired
@@ -46,7 +47,7 @@ public class TaskController {
         } catch (Exception e) {
             return "Error created student: " + e.toString();
         }
-        return task.toString();
+        return "Successful";
     }
 
     @RequestMapping("/readsingletask")
