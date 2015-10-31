@@ -43,7 +43,6 @@ CREATE TABLE STUDENT(Student_Id INT UNIQUE,First_Name varchar(255),
     	Email varchar(255) UNIQUE,
     	Password varchar(255),
     	Mentor_Id INT UNIQUE,
-    	Task_Id INT,
 	Univ_Id INT,
 	School_Name varchar(255));	
 
@@ -58,9 +57,10 @@ CREATE TABLE Mentor(Mentor_Id INT UNIQUE,
 CREATE TABLE Task(Task_Id INT UNIQUE,
     	Task_Name varchar(255),
     	Date varchar(255),
+	Student_Id INT;
 	Status varchar(255));
 
 --Universites--
 CREATE TABLE Universities(Univ_Id INT UNIQUE,
-    	Univ_Name varchar(255),
-   	Task_Id INT);
+    	Univ_Name varchar(255)
+	);
