@@ -38,10 +38,10 @@ public class TaskController {
 
     @RequestMapping(value = "/newTask")
     @ResponseBody
-    public String createNewStudent(String firstName, String lastName, Integer studentId, String status){
+    public String createNewStudent(String name, String dateTime, Integer studentId, String status){
         Task task = null;
         try {
-            task = new Task(firstName, lastName, studentId, status);
+            task = new Task(name, dateTime, studentId, status);
             taskDAO.save(task);
         } catch (Exception e) {
             return "Error created student: " + e.toString();
