@@ -1,16 +1,17 @@
 <ion-content>
 	<h1>User Login</h1>
-	<div class="card">
+	<div>
 		<div class="item item-divider">
     		<div style="text-align:center; width:100%; color:red;"></div>
   		</div>
 		
 		<form ng-Submit= "getUser()">
-			<input type="text" placeholder="Email" ng-model='email' class="loginInput"></input>
+			<input type="text" ng-model="team.name"></input>
 
-			<input type="password" placeholder="Password" ng-model='password' class="loginInput"></input>
+			<input type="password" ng-model="team.password"></input>
 			<div class="item item-divider">
     			<button type='submit' class="submitBtn">Submit</button>
+    			<button type="button" ng-click="getUser()"> </button>
   			</div>
 		</form>
 	</div>

@@ -1,12 +1,11 @@
-<ion-content>
+<ion-content ng-controller="oldloginCtrl">
 	<h1>User Login</h1>
 	<div class="card">
 		<div class="item item-divider">
     		<div ng-bind="alertMessage" style="text-align:center; width:100%; color:red;"></div>
     		Register
   		</div>
-		
-		<form ng-Submit= "sendForVerification()">
+		<form ng-Submit= "getUser()">
 			<input type="text" placeholder="First Name" ng-model='firstname' class="loginInput"></input>	
 			<input type="text" placeholder="Last Name" ng-model='lastname' class="loginInput"></input>
 			<input type="text" placeholder="School" ng-model='school' class="loginInput"></input>
