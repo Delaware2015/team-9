@@ -16,7 +16,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'casfrontApp.service'
+    'casfrontApp.service',
+    
   ])
   .config(function ($routeProvider) {
     $routeProvider

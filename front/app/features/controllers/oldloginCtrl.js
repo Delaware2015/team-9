@@ -7,18 +7,18 @@
  * Controller of the casfrontApp
  */
 angular.module('casfrontApp')
-  .controller('oldloginCtrl', function ($scope, loginservice, $window) {
+  .controller('oldloginCtrl', function ($scope, loginservice, $location) {
    	console.log("bull");
    	$scope.getUser = function(){
    		var user= {
    			email : $scope.email,
    			password : $scope.password
    		}
-   		loginservice.sendForVerification(user);
+   		loginservice.verifyUser(user);
    	}
 
-    $scope.newUser = function(){
-
+    $scope.goToNewUser = function(){
+        $location.path("/newlogin.html")
     }
 
   });
