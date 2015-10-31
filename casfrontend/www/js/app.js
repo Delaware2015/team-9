@@ -21,12 +21,12 @@ angular.module('casproject', ['ionic', 'casproject.controllers'])
 
   $stateProvider
             .state('oldlogin', {
-                url: '/oldlogin',
+                url: '#/oldlogin',
                 templateUrl: '/features/loginfeature/views/oldlogin.html',
                 controller: "oldloginCtrl"
             })
             .state('newlogin', {
-                url: '/newlogin',
+                url: '#/newlogin',
                 templateUrl: '/features/loginfeature/views/newlogin.html',
                 controller: "newloginCtrl"
             })
