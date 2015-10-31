@@ -13,7 +13,7 @@ angular
     'ngCookies',
     'ngResource',
     'ngRoute',
-    'ngSanitize',
+    'ngSanitize',   
     'ngTouch',
     'casfrontApp.service',
     'casfrontApp.taskservice'
@@ -24,13 +24,19 @@ angular
         templateUrl: 'features/views/oldlogin.html',
         controller: 'oldloginCtrl',
       })
-      .when('/about', {
+      .when('/newlogin', {
         templateUrl: 'features/views/newlogin.html',
         controller: 'newloginCtrl',
+      })
+      .when('/resources', {
+        templateUrl: 'features/views/resources.html',
       })
       .when('/tasks', {
         templateUrl: 'features/views/tasks.html',
         controller: 'taskCtrl',
+      })
+       .when('/about', {
+        templateUrl: 'features/views/about.html',
       })
       .otherwise({
         redirectTo: '/'

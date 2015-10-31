@@ -1,16 +1,11 @@
-<h1>User Login</h1>
-	<div class="card">
-		<div class="item item-divider">
-    		<div style="text-align:center; width:100%; color:red;"></div>
-  		</div>
-		
+<h1 class= jumbotron>User Login</h1>
 		<form ng-Submit= "getUser()">
-			<input type="text" placeholder="Email" ng-model='email' class="loginInput"></input>
+			<input type="text" placeholder="Email" ng-model='email' class= "col-md-6"></input>
 
-			<input type="password" placeholder="Password" ng-model='password' class="loginInput"></input>
-			<div class="item item-divider">
-    			<button type='submit' class="submitBtn">Submit</button>
-    			<button type='button' ng-click="goToNewUser()" class="submitBtn">New User</button>
+			<input type="password" placeholder="Password" ng-model='password' class= "col-md-6"></input>
+			<div></div>
+    			<button type='submit' class= "col-md-6">Submit</button>
+    			<button type='button' ng-click="goToNewUser()" class= "col-md-6">New User</button>
 
   			</div>
 		</form>

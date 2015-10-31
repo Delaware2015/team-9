@@ -79,5 +79,14 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+    text-align: center;
+    font-size: 40pt;
   }
+}
+.input{
+  text-align: center;
+}
+.loginbuttons{
+  width: 100%;
+  margin-left: 50%;
 }
