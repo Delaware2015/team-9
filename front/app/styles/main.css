@@ -101,4 +101,6 @@ button{
 img{
   width: 300px;
 }
-
+.addtask{
+  display:inline;
+}

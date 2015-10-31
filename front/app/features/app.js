@@ -32,7 +32,7 @@ angular
         templateUrl: 'features/views/resources.html',
       })
       .when('/tasks', {
-        templateUrl: 'features/views/tasks.html',
+        templateUrl: 'features/views/addtask.html',
         controller: 'taskCtrl',
       })
        .when('/about', {

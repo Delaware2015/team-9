@@ -26,7 +26,7 @@ angular.module('casfrontApp')
 
   		}
 
-      $scope.backToOldUser = function(){
+      $scope.toOldUser = function(){
         $location.path("/")
     }
   });

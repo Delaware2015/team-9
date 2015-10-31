@@ -1,6 +1,7 @@
-<h1 class= jumbotron>Add a Task/h1>
+<h1 class= jumbotron>Add a Task!</h1>
 		<form ng-Submit= "addTask()">
-			<input type= "text" placeholder="Task Name" ng-model= "taskname"></input>
-			<input type= "date" ng-model= "taskdate"></input>
-			Completed?<input type="checkbox" ng-model="status" name="status" value="Bike"> </input>
+			<input class ="addtask" type= "text" placeholder="Task Name" ng-model= "taskname"></input>
+			<input class ="addtask" type= "text" placeholder="Completion Date" ng-model= "taskdate"></input>
+			<input class ="addtask" type="text" placeholder= "Completed? Y/N" ng-model="status"></input>
+			<input type="submit"></input>
 		</form>
