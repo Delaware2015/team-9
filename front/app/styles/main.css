@@ -30,13 +30,6 @@ body {
   padding-bottom: 19px;
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-
 .container-narrow > hr {
   margin: 30px 0;
 }
@@ -46,6 +39,7 @@ body {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   background-color : #1e90ff;
+  box-shadow: 3px 3px 1px .2;
 }
 .jumbotron .btn {
   font-size: 21px;
@@ -82,6 +76,7 @@ body {
     border-bottom: 0;
     text-align: center;
     font-size: 30pt;
+    margin-bottom: 30px;
   }
 }
 
@@ -91,11 +86,14 @@ input{
   border-radius: 3px;
 }
 button{
-  margin-left:60px;
+  margin-left:65px;
   margin-top: 40px;
   margin-bottom: 25px;
   border-radius: 6px;
 }
 .login_input{
-  margin-left: 25%;
+  margin-left: 24%;
+}
+img{
+  width: 300px;
 }

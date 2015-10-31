@@ -7,7 +7,7 @@
  * Controller of the casfrontApp
  */
 angular.module('casfrontApp')
-  .controller('newloginCtrl', function ($scope, loginservice) {
+  .controller('newloginCtrl', function ($scope, loginservice, $location) {
   		$scope.createNewUser= function(){
   			var newUser = {
   				firstname: $scope.firstname,
@@ -25,4 +25,8 @@ angular.module('casfrontApp')
   			loginservice.createNewUser(newUser);
 
   		}
+
+      $scope.backToOldUser = function(){
+        $location.path("/")
+    }
   });
