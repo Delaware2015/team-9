@@ -1,18 +1,23 @@
-<ion-content>
+<ion-pane>
 	<h1>User Login</h1>
-	<div>
-		<div class="item item-divider">
-    		<div style="text-align:center; width:100%; color:red;"></div>
-  		</div>
-		
-		<form ng-Submit= "getUser()">
-			<input type="text" ng-model="team.name"></input>
+	<div class="card">
 
-			<input type="password" ng-model="team.password"></input>
-			<div class="item item-divider">
-    			<button type='submit' class="submitBtn">Submit</button>
-    			<button type="button" ng-click="getUser()"> </button>
-  			</div>
+  		<hr>
+		<img src="..\..\..\..\..\casfrontend\www\img\caslogo.jpg">
+		
+		<form ng-Submit= "sendForVerification()">
+			<hr>
+		        <form class="form-inline">
+		        	<input type="text" class="form-control" placeholder="Email" style="width: 200px;">
+		        	<input type="password" class="form-control" placeholder="Password" style="width: 200px;">
+		        	<div class="checkbox">
+		        		<label>
+		            	<input type="checkbox">Remember me</label>
+		        	</div>
+		        	<button type="submit" class="btn btn-default">Sign in</button>
+		    	</form>
+	    	<hr>
+	    	<button type="register" class="btn btn-default">Register</button>
 		</form>
 	</div>
-</ion-content>
+</ion-pane>
