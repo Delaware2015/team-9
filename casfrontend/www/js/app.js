@@ -17,3 +17,19 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+.config(function($stateProvider, $urlRouterProvider) {
+
+  $stateProvider
+            .state('oldlogin', {
+                url: '/oldlogin',
+                templateUrl: '/features/loginfeature/views/oldlogin.html',
+                controller: "oldloginCtrl"
+            })
+            .state('newlogin', {
+                url: '/newlogin',
+                templateUrl: '/features/loginfeature/views/newlogin.html',
+                controller: "newloginCtrl"
+            })
+
+             $urlRouterProvider.otherwise('/oldlogin');
+      });
